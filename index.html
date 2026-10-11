@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz Game</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+        <div class="screen active" id="start-screen">
+            <h2>Quiz Time!</h2>
+            <p>Test your knowledge with these fun questions</p>
+            <button id="start-btn">Start Quiz</button>
+        </div>
+
+        <div class="screen" id="quiz-screen">
+            <div class="quiz-header">
+                <h2 id="question-text">Question</h2>
+                <div class="quiz-info">
+                    <p>Question <span id="current-question">1</span> of <span id="total-questions">5</span></p>
+                    <p>Score <span id="score">0</span></p>
+                </div>
+            </div>
+            <div class="answers-container" id="answers-container"></div>
+            <div class="progress-bar">
+                <div class="progress" id="progress"></div>
+            </div>
+        </div>
+
+        <div class="screen" id="res-screen">
+            <h2>Quiz Results</h2>
+            <div class="result-info">
+                <p>You scored <span id="final-score">0</span> out of <span id="max-score">5</span></p>
+                <div class="result-message" id="result-message">Good Jop!</div>
+            </div>
+            <button id="restart-btn">Restart Quizs</button>
+        </div>
+    </div>
+
+
+    <script src="main.js"></script>
+</body>
+</html>
